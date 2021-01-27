@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox</title>
+    <style>
+        * {
+            padding: 5px;
+        }
+
+        /* Main Container */
+        .largecontainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* First Sub Container */
+        .container {
+            /* border: 2px solid #000000; */
+            width: 610px;
+            height: 620px;
+            color: white;
+            background-color: purple;
+        }
+
+        /* Unordered list of Container class */
+        .container ul {
+            display: flex;
+            /* border: 2px solid red; */
+        }
+
+        .container ul li {
+            list-style: none;
+        }
+
+        #dropbox {
+            font-size: 2rem;
+        }
+
+        #teams {
+            padding-left: 30px;
+        }
+
+        .shift {
+            display: block;
+            padding: 8px 21px;
+            font-size: 1.4rem;
+        }
+
+        .container ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Content of a Container class */
+        .container h1 {
+            font-size: 4rem;
+            /* border: 2px solid red; */
+            width: 440px;
+            margin-left: 75px;
+            position: relative;
+            top: -22px;
+        }
+
+        .container p {
+            /* border: 2px solid red; */
+            width: 285px;
+            margin-left: 75px;
+        }
+
+        /* Second Sub Container */
+        .container2 {
+            /* border: 2px solid red; */
+            width: 500px;
+        }
+
+        /* Unordered list of Container class */
+        .container2 ul {
+            display: flex;
+            /* border: 2px solid red; */
+        }
+
+        #sign {
+            padding-left: 170px;
+        }
+
+        .container2 ul li {
+            list-style: none;
+            padding: 5px 20px 0px 0px;
+        }
+
+        .container2 ul li a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: gray;
+        }
+
+        /* Content of container2 class */
+        .container2 h1 {
+            /* border: 2px solid red; */
+            position: relative;
+            top: 30px;
+        }
+
+        .container2 p {
+            position: relative;
+            top: 5px;
+        }
+
+        .container2 p a {
+            text-decoration: none;
+        }
+
+        .signing {
+            /* border: 2px solid red; */
+            padding-left: 50px;
+        }
+
+        .signing :first-child {
+            margin-top: 35px;
+        }
+
+        .signing input {
+            padding: 5px 190px 5px 5px;
+            margin-bottom: 10px;
+        }
+
+        #submit {
+            padding: 7px 160px;
+            margin-top: 15px;
+            color: white;
+            background-color: blue;
+            border-color: blue;
+        }
+
+        #btn {
+            padding: 7px 117px;
+            margin-top: 15px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        #submit,
+        #btn:hover {
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 1020px) {
+            .largecontainer {
+                flex-direction: column;
+            }
+
+            .container2 ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="largecontainer">
+        <div class="container">
+            <ul>
+                <li><a href="#" id="dropbox">Dropbox</a></li>
+                <li><a href="#" class="shift" id="teams">For Teams</a></li>
+                <li><a href="#" class="shift">For individuals</a></li>
+            </ul>
+
+            <h1>Put your creative energy to work, with dropbox</h1>
+            <p>Dropbox is a modern workspace designed to reduce busywork-so you can focus on the things that matter</p>
+        </div>
+
+        <div class="container2">
+            <ul>
+                <li><a href="#" id="sign">Sign in</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+            <div class="signing">
+                <h1>Sign Up</h1>
+                <p>or <a href="#">sign in to your account</a></p>
+            </div>
+            <div class="signing" id="signing">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <br>
+                <input type="checkbox"> I agree to the Dropbox Terms
+                <button id="submit">Sign up</button>
+                <button id="btn">G sign up with Google</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
