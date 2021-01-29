@@ -1,0 +1,257 @@
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+/* Make Navigation Bar */
+#container {
+    position: sticky;
+    background-color: rgb(248, 241, 241);
+    top: 0px;
+}
+.container nav{
+    display: none;
+}
+.container nav select{
+    background-color: rgb(146, 141, 141);
+    color: white;
+    padding: 10px 50px;
+}
+.container nav select option:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.container ul {
+    display: flex;
+}
+.container ul li{
+    list-style: none;
+    padding: 15px 10px;
+}
+.container ul li:hover{
+    background-color:rgb(81, 153, 216);
+}
+.container ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 17px 10px;
+}
+.container ul li a:hover{
+    color: white;
+}
+#foods {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(59, 27, 202);
+}
+#foods:hover{
+    cursor: default;
+}
+#online {
+    font-weight: bolder;
+    font-size: 20px;
+    color: orange;
+}
+#online:hover{
+    color:white;
+}
+#rathi {
+    padding: 1px 10px;
+}
+#rathi:hover{
+    background-color: white;
+}
+#shop {
+    padding: 12px 10px;
+}
+
+/* Adding Image */
+#container2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Short Note */
+#container3 {
+    margin: 35px 15px;
+    padding: 20px 20px;
+    border-left:4px solid orange;
+}
+#container3 h1{
+    color: orangered;
+    margin-bottom: 28px;
+}
+
+/* Adding Paragraph */
+#container4{
+    margin: 0px 15px;
+}
+
+/* Adding Images of Sweet */
+#container5{
+    margin: 0px 5px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+}
+.box {
+    border:1px solid grey;
+    text-align: center;
+}
+.box p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(255, 81, 0);
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+#item5{
+    grid-column: 3;
+    grid-row:1/3 ;
+}
+#item5 p{
+    margin-bottom: 180px;
+}
+
+/* Make contact Form */
+#container6{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#container6 h3{
+    color: white;
+    padding: 15px 0px;
+    font-size: 40px;
+}
+#container6 input{
+    margin: 20px 0px;
+    padding: 10px 70px;
+    text-align: center;
+    border-radius: 20px;
+}
+#container6 textarea{
+    border-radius: 10px;
+    margin-top: 20px;
+    /* margin-bottom: 0px; */
+}
+#container6 button{
+    padding: 5px 60px;
+    margin: 30px 0px;
+    border-radius: 15px;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Copyright Line */
+#container7 {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    background-color: rgb(61, 58, 58);
+}
+#container7 li{
+    list-style: none;
+}
+#container7 a{
+    color: white;
+}
+
+
+
+/* For Responsive */
+@media screen and (max-width: 1322px){
+    .container ul li{
+        padding: 14px 0px;
+    }
+}
+
+@media screen and (max-width:1138px){
+    #container nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #container ul{
+        display: none;
+    }
+    #container nav li{
+        list-style: none;
+    }
+    #container nav li a{
+        color: rgb(59, 27, 202);
+        text-decoration: none;
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:870px){
+    #container nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #container ul{
+        display: none;
+    }
+    #container nav li{
+        list-style: none;
+    }
+    #container nav li a{
+        color: rgb(59, 27, 202);
+        text-decoration: none;
+        font-size: 45px;
+    }
+    #container5 {
+        display: flex;
+        flex-direction: column;
+    }
+    #item5 p{
+        margin-bottom: 20px;
+    }
+    #container7{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:650px){
+    #container nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #container ul{
+        display: none;
+    }
+    #container nav li{
+        list-style: none;
+    }
+    #container nav li a{
+        color: rgb(59, 27, 202);
+        text-decoration: none;
+        font-size: 25px;
+    }
+    #container5 {
+        display: flex;
+        flex-direction: column;
+    }
+    #item5 p{
+        margin-bottom: 20px;
+    }
+    #container7{
+        flex-direction: column;
+    }
+    .container nav select {
+        padding: 6px 8px;
+    }
+}
